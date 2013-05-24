@@ -23,7 +23,7 @@ A Riak backend is the mechanism by which values are persisted. Different backend
 
 [[Cluster Capacity Planning]] outlines the various elements and variables that should be considered when planning your Riak cluster.
 
-If you have chosen [[Bitcask]] as your backend, you will also want to run through the [[Bitcask Capacity Calculator]] to help you calculate a reasonable capacity.
+If you have chosen [[Bitcask]] as your backend, you will also want to run through the [[Bitcask Capacity Planning]] to help you calculate a reasonable capacity.
 
 ## Operating Systems
 

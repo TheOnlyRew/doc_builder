@@ -181,6 +181,6 @@ If you get errors when building about "incompatible architecture", please verify
 ## Next Steps?
 From here you might want to check out:
 
-  * [[Post Installation|Post Installation Notes]]: for checking Riak health after installation
+  * [[Post Installation]]: for checking Riak health after installation
   * [[The Riak Fast Track]]: a guide for setting up a 4 node cluster and exploring Riak's main features.
   * [[Basic Cluster Setup]]: a guide that will show you how to go from one node to bigger than Google!

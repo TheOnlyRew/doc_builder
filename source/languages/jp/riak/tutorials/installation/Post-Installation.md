@@ -1,5 +1,5 @@
 ---
-title: Post Installation Notes
+title: Post Installation
 project: riak
 version: 0.10.0+
 document: tutorial
