@@ -1,0 +1,46 @@
+---
+title: Downloads
+project: riak
+version: 1.1.0+
+document: reference
+audience: beginner
+keywords: [downloads, operator, user]
+simple: true
+body_id: downloads
+---
+
+- project = $default_project
+- version = current_version(project)
+- downloads = Downloads.new(project, version)
+
+h1 Download #{project.capitalize} #{version}
+
+p You should be able to find your operating system in the choices below.
+p If your OS is unlisted, you may download the [[source|Downloads#source]] at the bottom of this page, and follow the instructions to [[build Riak|Installing Riak from Source]].
+
+- for os, os_data in downloads
+  - next unless downloads.files?(os_data)
+  h3 id=os
+    img src="/images/layout/#{os_data['icon']}"
+    | &nbsp;
+    == os_data['name']
+  table
+    - for osv, osv_data in os_data["versions"]
+      - for arch, arch_data in osv_data["arch"]
+        - next unless arch_data['file']
+        tr
+          td.arch==arch_data['name']
+          td.link
+            a href=downloads.file_url(os, osv, arch_data['file'], arch_data['static_file'])
+              ==arch_data['file']
+          td.size
+            ==downloads.file_size(arch_data['file_size'])
+            | &nbsp;&nbsp;
+            - if arch_data['csum'].present?
+              a href="#{downloads.file_url(os, osv, arch_data['csum'], arch_data['static_csum'])}" hash
+  - if os_data['install'].present?
+    p.install_instruction Here are further instructions for [[#{os_data['install']}]]
+
+javascript:
+  document.write(unescape("%3Cscript src='" + document.location.protocol + "//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+  Munchkin.init('721-DGT-611');
