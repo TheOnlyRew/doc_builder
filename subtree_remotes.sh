@@ -23,3 +23,6 @@ echo ""
 echo "To pull in recent changes into existing subtrees,"
 echo "  * git subtree pull --squash -P source/languages/en/riak riak_docs <branch>"
 echo "  * git subtree pull --squash -P source/languages/en/riakcs riakcs_docs <branch>"
+
+# I'm adding in a pretty useless change here, just to demonstrate how the
+# history will look when interweaving updates to the subtrees and the core repo.
