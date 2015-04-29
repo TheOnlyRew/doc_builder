@@ -11,6 +11,9 @@ moved: {
 }
 ---
 
+This time, I'm going to see about importing changes from a new branch created in
+the subtree repo. Check out how I've fixed a bunch of spelling mistakes.
+
 In this tutorial, we'll share some quick start installers for OSX, as 
 well as provide instructions for building a
 [five-node](http://basho.com/why-your-riak-cluster-should-have-at-least-five-nodes/)
