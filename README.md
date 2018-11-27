@@ -1,3 +1,7 @@
+**This repository is being kept for archival, historical, and sentimental
+purposes only. It is not meant to be used as anything more than demo
+code, and may (does) include dependencies with known security issues.**
+
 # Riak Docs
 
 This repo holds all the content (and other bits, e.g. CSS, JavaScript,
